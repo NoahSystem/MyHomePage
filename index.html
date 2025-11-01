@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah System - 스마트한 솔루션, 더 나은 미래</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 기본 스타일 초기화 및 폰트 설정 */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* 밝은 회색 배경 */
+            color: #343a40; /* 어두운 텍스트 색상 */
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* 뷰포트 높이만큼 */
+        }
+
+        /* 헤더 스타일 */
+        header {
+            background-color: #ffffff; /* 흰색 헤더 배경 */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* 그림자 */
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #007bff; /* 브랜드 색상 (파란색) */
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #495057;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #007bff; /* 호버 시 브랜드 색상 */
+        }
+
+        /* 메인 콘텐츠 영역 */
+        main {
+            flex-grow: 1; /* 헤더와 푸터를 제외한 나머지 공간 채우기 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 2rem;
+            text-align: center;
+            background: linear-gradient(to right, #e0f7fa, #ffffff); /* 부드러운 그라데이션 */
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            color: #212529;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            color: #6c757d;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff; /* 브랜드 색상 */
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3; /* 호버 시 더 진한 색 */
+            transform: translateY(-2px); /* 살짝 올라오는 효과 */
+        }
+
+        /* 푸터 스타일 */
+        footer {
+            background-color: #343a40; /* 어두운 푸터 배경 */
+            color: #f8f9fa;
+            text-align: center;
+            padding: 1.5rem 2rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="/" class="logo">Noah System</a>
+        <nav>
+            <a href="/">홈</a>
+            <a href="/about.html">회사 소개</a>
+            <a href="/products.html">제품</a>
+            <a href="/contact.html">문의</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-content">
+            <h1>Noah System과 함께, <br>미래를 위한 혁신을 시작하세요.</h1>
+            <p>다양한 산업 분야에 최적화된 스마트 솔루션으로 비즈니스의 잠재력을 극대화합니다.</p>
+            <a href="/products.html" class="cta-button">제품 자세히 보기</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Noah System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
